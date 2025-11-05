@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Orbitron:wght@600&display=swap"
+          rel="stylesheet">
+     <title>Terminal dashboard</title>
+</head>
+<style>
+     body {
+          background-color: #070b09;
+          color: #ffffff;
+          margin: 0;
+          font-family: 'Fira Code', monospace;
+     }
+
+     .header {
+          background-color: #0e3b12;
+          border: solid rgb(15, 97, 15);
+          border-radius: 0px 0px 20px 20px;
+          padding: 7px 30px 7px 30px;
+          box-shadow: 0 0 30px green;
+
+     }
+
+     .header>h1 {
+          font-family: 'Orbitron', monospace;
+          display: inline-block;
+     }
+
+     .icons {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          display: flex;
+          gap: 20px;
+          filter: drop-shadow(0 0 10px green);
+          cursor: pointer;
+     }
+
+     .two {
+          position: absolute;
+          top: 6px;
+          right: 92px;
+          background-color: #60fd6d;
+          color: #0e3b12;
+          padding: 2px;
+          border-radius: 100%;
+          width: 20px;
+          text-align: center;
+     }
+
+     .icn {
+          padding: 10px;
+          border-radius: 20px;
+          transition: 0.2s ease;
+     }
+
+     .icn:hover {
+          background-color: #79cea364;
+     }
+
+     .fo {
+          position: absolute;
+          top: 6px;
+          right: 186px;
+          background-color: #60fd6d;
+          color: #0e3b12;
+          padding: 2px;
+          border-radius: 100%;
+          width: 20px;
+          text-align: center;
+     }
+
+     .ze {
+          position: absolute;
+          top: 6px;
+          right: 5px;
+          background-color: #b63636;
+          color: #ffffff;
+          padding: 2px;
+          border-radius: 100%;
+          width: 20px;
+          text-align: center;
+
+     }
+
+     .page {
+          color: green;
+          margin-left: 20px;
+          margin-top: 30px;
+     }
+
+     .enter {
+          font-size: 25px;
+     }
+
+     .terminal {
+          font-family: 'Orbitron', monospace;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 50px;
+          text-shadow: 0 0 20px green;
+     }
+
+     input {
+          margin-left: 35%;
+          padding: 10px;
+          background-color: #0e3b12;
+          color: #5a7c54;
+          outline: none;
+          border: solid green;
+          border-radius: 10px 10px 40px 40px;
+          font-size: 18px;
+          text-align: center;
+          box-shadow: 0 0 10px green;
+          width: 400px;
+     }
+
+     input::placeholder {
+          color: #5a7c54;
+     }
+
+     .msg {
+          position: fixed;
+          top: 660px;
+          right: 13px;
+     }
+
+     .msgic {
+          cursor: pointer;
+          border-radius: 30px;
+          transition: 0.2s ease;
+     }
+
+     .msgic:hover {
+          transform: scale(1.2);
+     }
+
+     ul {
+          list-style-type: georgian;
+     }
+     .dash{
+          color: #5a7c54;
+          font-size: 20px;
+     }
+     a{
+          color: #43a14b;
+          margin-left: 43%;
+          text-decoration: none;
+     }
+</style>
+
+<body>
+     <div class="header">
+          <h1>Command Console <span class="dash">(dashboard)</span>
+          </h1>
+          <div class="icons">
+               <img class="icn" src="github.png" height="55"><span class="two">2</span>
+               <img class="icn" src="whatsapp.png" height="50"><span class="fo">4</span>
+               <img class="icn" src="cart.png" height="50"><span class="ze">6</span>
+          </div>
+     </div>
+     <div class="page">
+          <h1 class="terminal">\....Terminal activated..../</h1>
+          <a href="https://geekprank.com/hacker/">>> Go to main terminal</a> <br><br>
+          <span class="enter"><input type="text" placeholder="Enter command"></span>
+          <p>
+               [00:00:01] INIT sequence started...<br>
+               [00:00:12] LOADING core libraries... done.<br>
+               [00:00:18] ENVIRONMENT: boot variables detected.<br>
+               [00:00:29] CPU check: 12 cores operational.<br>
+               [00:00:37] RAM usage: 2.3GB / 16GB.<br>
+               [00:00:49] STORAGE: mounted /dev/sda1 — OK.<br>
+               [00:01:03] NETWORK: interfaces up — IP: 10.0.0.13<br>
+               [00:01:22] DNS sync — complete.<br>
+               [00:01:45] CONNECTED to node: alpha.proxy.net<br>
+               [00:02:04] FIREWALL: all ports secure.<br>
+               [00:02:25] ENCRYPTION layer active (AES-256).<br>
+               [00:02:45] SESSIONS: 3 active | 5 pending | 2 timed out<br>
+               [00:03:01] INTRUSION DETECTED: signature #7 — CONTAINED<br>
+               [00:03:29] PROCESS ID 0234 — idle.<br>
+               [00:03:57] PROCESS ID 0237 — executing payload.<br>
+               [00:04:21] PAYLOADS: staging -> /deploy/alpha<br>
+               [00:04:43] OPERATIONAL status: green.<br>
+               [00:05:12] TELEMETRY: 84% integrity | no anomalies<br>
+               [00:05:37] DATABASE: indexing user records... done<br>
+               [00:06:03] LOGGING: system logs streaming...<br>
+               [00:06:22] MODULE: encryption kernel active<br>
+               [00:06:49] CONNECTION: VPN tunnel established<br>
+               [00:07:00] CHAT: secure channel open — 5 unread messages<br>
+               [00:07:24] UPDATE: node synchronization complete<br>
+               [00:07:46] DOWNLOAD: asset packages verified<br>
+               [00:08:01] AI SUBSYSTEM: rebooting neural threads...<br>
+               [00:08:32] SENSOR DATA: incoming 127 packets/sec<br>
+               [00:08:59] FIREWALL: anomaly detected — neutralized<br>
+               [00:09:21] MONITOR: system temperature stable<br>
+               [00:09:50] LOG: session token refreshed<br>
+               [00:10:13] BACKUP: shadow copy created<br>
+               [00:10:41] ARCHIVE: daily snapshot saved -> backup.tgz<br>
+               [00:11:09] SYSTEM CHECK: all subsystems responsive<br>
+               [00:11:33] AI NODE: learning cycle running (82%)<br>
+               [00:12:00] POWER USAGE: 57% efficiency maintained<br>
+               [00:12:25] NETWORK TRAFFIC: 124 Mbps outbound<br>
+               [00:12:51] SECURITY SCAN: clean — 0 threats found
+          </p>
+          <h1>Progress...</h1>
+          <ul>
+               <li>System hacked: 24</li>
+               <li>Backdoors planted: 7</li>
+               <li>Admin creds harvested: 12</li>
+               <li>Firewall probes: 3,421</li>
+               <li>Zero-day queued: 1 (staged)</li>
+               <li>Exploit chain: Stage 2 / 5</li>
+               <li>Data exfil transfer: 64%</li>
+               <li>Encrypted packets captured: 18,204</li>
+               <li>Session hijacks: 9 active</li>
+               <li>Reverse shells: 4 persistent</li>
+               <li>Privilege escalation: 2 succeeded</li>
+               <li>Service spoofing: 3 hosts</li>
+               <li>Credential spray attempts: 1,102</li>
+               <li>Keylogger installs: 5</li>
+               <li>RAT heartbeats: 00:12:34</li>
+               <li>Sandbox evasion: PASS</li>
+               <li>Persistence hooks: 11</li>
+               <li>Command queue: 27 pending</li>
+               <li>Telemetry muted: true</li>
+               <li>Beacon interval: 00:05:00</li>
+               <li>IP obfuscation nodes: 6</li>
+               <li>Logs wiped: 3 targets</li>
+               <li>Mirror nodes synced: 2</li>
+               <li>Safe-mode trigger: disabled</li>
+               <li>Mission ETA: 00:47:00</li>
+          </ul>
+          <!-- NOTE: purely fictional status UI — do not use for real attacks -->
+          <div class="msg"><abbr title="System headquater"><img class="msgic" src="system.png" alt=""
+                         height="70px"></abbr></div>
+     </div>
+</body>
+
+</html>
